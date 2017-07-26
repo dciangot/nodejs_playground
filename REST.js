@@ -23,7 +23,7 @@ app.get('/listUsers', function (req, res) {
     });
 
     //request.get(options)
-    request.get('http://www.google.com', function (e, r, body) {
+    request.get('http://www.google.com', function (e, response, body) {
     console.log(body)
     });
 
@@ -34,7 +34,7 @@ var server = app.listen(8081, function () {
 
   var host = server.address().address
   var port = server.address().port
-  
+
   console.log("Example app listening at http://%s:%s", host, port)
 
 })
